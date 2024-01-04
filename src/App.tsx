@@ -16,15 +16,15 @@ function App() {
 
   return (
     <>
-      <h1>Is it Bath Night?</h1>
-      <div>
-        <img src={isBathNight ? bubbleBathGif : messyPig} alt={isBathNight ? 'Bubble bath' : 'Messy pig'} />
-      </div>
+      <h1>Is It Bath Night?</h1>
       {isBathNight ? (
         <h2 className="yes-heading">YES, it's bath night!!!!!</h2>
       ) : (
-        <h2 className="no-heading">NO, it is not bath night.........</h2>
+        <h2 className="no-heading">NOPE! No bath today.</h2>
       )}
+      <div>
+        <img className="pig-image" src={isBathNight ? bubbleBathGif : messyPig} alt={isBathNight ? 'Bubble bath' : 'Messy pig'} />
+      </div>
     </>
   )
 }
